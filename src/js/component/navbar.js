@@ -5,11 +5,11 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<img className="iconStarWars" src="http://www.officialpsds.com/images/thumbs/Star-Wars-Logo-psd35718.png"></img>
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
+					<button className="favoritos btn btn-primary">Favorites</button>
 				</Link>
 			</div>
 		</nav>
