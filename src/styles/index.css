@@ -1,7 +1,171 @@
-.iconStarWars{
+/* Estilo para el contenedor principal */
+.demoContainer {
+    display: flex;
+    /* Usar flexbox para disposición horizontal */
+    flex-direction: column;
+    /* Disposición vertical para el título y el grupo */
+    align-items: center;
+    /* Espacio alrededor del contenedor principal */
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg?download=true");
+    background-size: auto;
+}
+
+/* Estilo para el título */
+.text-center {
+    text-align: center;
+    /* Centrar el texto del título */
+    margin-bottom: 2vh;
+    /* Espacio debajo del título */
+    font-size: 2em;
+    /* Tamaño de fuente mayor para el título */
+    color: #fafe02;
+    /* Color del texto para el título */
+}
+
+/* Estilo para la imagen de error */
+.imagenError {
+    max-width: 100%;
+    height: auto;
+    /* Mantener la relación de aspecto de la imagen */
+    border: 2px solid #ccc;
+    /* Borde sutil para mejorar el enfoque */
+    border-radius: 8px;
+    /* Bordes redondeados para un aspecto más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil para un efecto de profundidad */
+    margin: 3vh;
+}
+
+/* Estilo para el grupo que contiene la imagen y la información detallada */
+.grupo {
+    display: flex;
+    /* Disposición horizontal */
+    justify-content: space-between;
+    /* Espacio entre la imagen y la información detallada */
+    align-items: flex-start;
+    /* Alinear los elementos al inicio del contenedor */
+    gap: 2vw;
+    /* Espacio entre la imagen y la información */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se ajusten en pantallas más pequeñas */
+    width: 100%;
+    max-width: 1200px;
+    /* Ancho máximo para mantener la estructura */
+}
+
+/* Estilo para la información detallada */
+.informacionDetallada {
+    background-color: #f9f9f9;
+    /* Fondo claro para la sección de información */
+    padding: 2vw;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    width: 100%;
+    /* Ajustar el ancho al contenedor disponible */
+    max-width: 100%;
+    /* Evitar que el contenedor se extienda más allá de su contenedor */
+    margin: 3vh;
+}
+
+/* Estilo para la lista */
+ul {
+    width: 100%;
+    max-width: 500px;
+    /* Límite de ancho para que no se extienda demasiado */
+    margin: 0;
+    /* Eliminar margen adicional */
+    padding: 0;
+    list-style-type: none;
+    /* Eliminar viñetas predeterminadas */
+    text-transform: capitalize;
+    /* Primer letra en mayúscula para cada ítem */
+}
+
+/* Estilo para cada elemento de la lista */
+ul li {
+    margin-bottom: 1vh;
+    /* Espacio entre los elementos de la lista */
+    font-size: 1.1em;
+    /* Tamaño de fuente ligeramente mayor para mejorar la legibilidad */
+    line-height: 1.5;
+    /* Espaciado entre líneas */
+}
+
+/* Estilos específicos para home.js */
+.iconStarWars {
     width: 20vh;
     margin: 2vh;
+   
 }
-.favoritos{
+
+.favoritos {
     margin: 2vh;
+   
+}
+
+.botonesCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.saberMas {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.likes {
+    width: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Ajuste para las tarjetas en home.js */
+.card-group {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Ajuste para el contenedor de tarjetas en home.js */
+.homeContainer {
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg?download=true");
+    background-size: auto;
+
+}
+
+
+.probar {
+    margin: 2vh;
+}
+
+.titulosPrincipales {
+    color: #fafe02;
+    margin: 2vh;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
 }
