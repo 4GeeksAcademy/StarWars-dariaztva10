@@ -54,36 +54,32 @@ export const Demo = () => {
 		<div className="demoContainer">
 			<h1 className="text-center">{details.name}</h1>  {/* Muestra el nombre del elemento */}
 			<div className="grupo row">
-				<img 
-					className="col-6 imagenError"
+				<img
+					className="col-6 imagenDemo"
 					src={imageUrl}  // URL de la imagen
-					onError={(e) => e.target.src = "https://www.goodvinilos.com/61003/vinilo-logo-star-wars.jpg"}
-
+					onError={(e) => e.target.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/1268px-Star_Wars_Yellow_Logo.svg.png"}
 				/>
+
+
+
 				<div className="col-6 informacionDetallada">
 					<ul>
-						{/* 
-    					Object.entries(details) convierte el objeto 'details' en un array de pares clave-valor.
-    					Por ejemplo, si 'details' es {name: "Luke Skywalker", height: "1.72m"}, entonces:
-   						 Object.entries(details) será [["name", "Luke Skywalker"], ["height", "1.72m"]].
-   						*/}
 						{Object.entries(details).map(([key, value]) => (
-							<li key={key}>  {/* Cada ítem de la lista necesita una clave única para ayudar a React a gestionar los cambios. */}
+							<li key={key}>
 								<strong>
-									{/* 
-                					Muestra la clave en negrita, reemplazando los guiones bajos con espacios para mayor legibilidad.
-                					Si la clave es 'birth_year', se mostrará como 'birth year'.
-                					*/}
 									{key.replace("_", " ")}:
 								</strong>
-								{/* Muestra el valor correspondiente a la clave */}
 								{value}
 							</li>
 						))}
 					</ul>
-
+				</div>
+				<div className="puntosDescriptivos row">
+					<div className="col-12 textoConInformacion">
+						<p>Hola! Aquí debería estar la información de cada elemento.</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</div >
 	);
 };

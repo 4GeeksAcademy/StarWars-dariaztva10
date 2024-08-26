@@ -9,7 +9,7 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
-					<button type="button" className="favoritos btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<button type="button" className="favoritos btn btn-warning position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						Favoritos
 						<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
 							0
@@ -29,8 +29,8 @@ export const Navbar = () => {
 
 								</div>
 								<div className="modal-footer">
-									<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-									<button type="button" className="btn btn-primary">Guarda</button>
+									<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cierra</button>
+									<button type="button" className="btn btn-warning">Guarda</button>
 								</div>
 							</div>
 						</div>

@@ -64,7 +64,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">{person.name}</h5>
 								<div className="botonesCard">
-									<Link to={`/demo/people/${person.uid}`} className="saberMas btn btn-primary">
+									<Link to={`/demo/people/${person.uid}`} className="saberMas btn btn-warning">
 										Saber más!
 									</Link>
 									<button type="button" className="likes btn btn-danger">
@@ -92,7 +92,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">{planet.name}</h5>
 								<div className="botonesCard">
-									<Link to={`/demo/planets/${planet.uid}`} className="saberMas btn btn-primary">
+									<Link to={`/demo/planets/${planet.uid}`} className="saberMas btn btn-warning">
 										Saber más!
 									</Link>
 									<button type="button" className="likes btn btn-danger">
@@ -120,7 +120,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">{vehicle.name}</h5>
 								<div className="botonesCard">
-									<Link to={`/demo/vehicles/${vehicle.uid}`} className="saberMas btn btn-primary">
+									<Link to={`/demo/vehicles/${vehicle.uid}`} className="saberMas btn btn-warning">
 										Saber más!
 									</Link>
 									<button type="button" className="likes btn btn-danger">
