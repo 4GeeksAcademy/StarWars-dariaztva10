@@ -6,6 +6,7 @@ export const Demo = () => {
 	const { type, id } = useParams();  // Obtenemos 'type' y 'id' de la URL
 	const [details, setDetails] = useState(null);  // Estado para almacenar los detalles
 	const [error, setError] = useState(null);  // Estado para manejar errores
+	const [imageURL, setImageURL] = useState("");
 
 	useEffect(() => {
 		const url = `https://www.swapi.tech/api/${type}/${id}`;
@@ -48,15 +49,19 @@ export const Demo = () => {
 		return <div>Loading...</div>;  // Muestra un mensaje de carga mientras se obtienen los datos
 	}
 
-	// Construye la URL de la imagen para el tipo y id específicos
-	const imageUrl = `https://starwars-visualguide.com/assets/img/${type}/${id}.jpg`;
+
+	if (type == "people") {
+		setImageURL(`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`);
+	} else {
+		setImageURL(`https://starwars-visualguide.com/assets/img/${type}/${id}.jpg`);
+	}
 	return (
 		<div className="demoContainer">
 			<h1 className="text-center">{details.name}</h1>  {/* Muestra el nombre del elemento */}
 			<div className="grupo row">
 				<img
 					className="col-6 imagenDemo"
-					src={imageUrl}  // URL de la imagen
+					src={imageURL}  // URL de la imagen
 					onError={(e) => e.target.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/1268px-Star_Wars_Yellow_Logo.svg.png"}
 				/>
 

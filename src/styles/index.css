@@ -1,4 +1,3 @@
-/* Estilo para el contenedor principal */
 .demoContainer {
     display: flex;
     flex-direction: column;
@@ -10,7 +9,6 @@
     background-repeat: no-repeat;
 }
 
-/* Barra de navegación */
 .navbar {
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-20-1_33761d6d.jpeg?download=true");
     background-size: cover;
