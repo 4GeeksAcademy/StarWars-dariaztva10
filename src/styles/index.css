@@ -29,17 +29,19 @@
 
 /* Estilo para la imagen de error */
 .imagenDemo {
+    width: 26rem;
     max-width: 100%;
     height: auto;
     border-radius: 50px;
-    margin: 3vh 0;
+    margin: 3vh;
+
 }
 
 /* Estilo para el grupo que contiene la imagen y la información detallada */
 .grupo {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 2vw;
     flex-wrap: wrap;
     width: 100%;
@@ -51,12 +53,12 @@
 /* Estilo para la información detallada */
 .informacionDetallada {
     background-color: #f9f9f9;
-    padding: 2vw;
+    padding: 2vh;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
-    margin: 3vh 0;
+
+
+
 }
 
 /* Estilo para la lista */
@@ -134,16 +136,9 @@ ul li {
     font-style: normal;
 }
 
-/* Ajuste para las tarjetas en home.js */
-.card-group {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin-bottom: 2vh;
-}
+
+
+
 
 /* Ajuste para el contenedor de tarjetas en home.js */
 .homeContainer {
@@ -153,13 +148,6 @@ ul li {
     background-repeat: no-repeat;
 }
 
-/* Botón de prueba */
-.probar {
-    margin: 2vh auto;
-    width: 20%;
-    height: auto;
-    padding: 1vh;
-}
 
 /* Estilo para los títulos principales */
 .titulosPrincipales {
@@ -170,7 +158,8 @@ ul li {
     font-optical-sizing: auto;
     font-style: normal;
 }
-.textoConInformacion{
+
+.textoConInformacion {
     background-color: #f9f9f9;
     padding: 2vw;
     border-radius: 8px;
