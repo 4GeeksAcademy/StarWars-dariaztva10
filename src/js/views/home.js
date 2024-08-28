@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import "../../styles/home.css"; // Puedes eliminar si no estás usando estilos personalizados
+import "../../styles/home.css"; 
+
 
 export const Home = () => {
+
 	const { store, actions } = useContext(Context);
 
 	useEffect(() => {
@@ -16,6 +18,7 @@ export const Home = () => {
 		e.target.src = "https://www.goodvinilos.com/61003/vinilo-logo-star-wars.jpg";
 	};
 
+	console.log(store.fav);
 	return (
 		<div className="homeContainer container-fluid">
 			<h1 className="text-center">Star Wars Blog</h1>
@@ -40,7 +43,10 @@ export const Home = () => {
 										<Link to={`/demo/people/${person.uid}`} className="saberMas btn btn-warning">
 											Saber más!
 										</Link>
-										<button type="button" className="likes btn btn-danger">
+										<button
+											type="button"
+											onClick={() => actions.addFavoritos(person.name)}
+											className="likes btn btn-danger">
 											<i className="fas fa-heart heart"></i>
 										</button>
 									</div>
@@ -71,7 +77,10 @@ export const Home = () => {
 										<Link to={`/demo/planets/${planet.uid}`} className="saberMas btn btn-warning">
 											Saber más!
 										</Link>
-										<button type="button" className="likes btn btn-danger">
+										<button
+											type="button"
+											onClick={() => actions.addFavoritos(planet.name)}
+											className="likes btn btn-danger">
 											<i className="fas fa-heart heart"></i>
 										</button>
 									</div>
@@ -103,7 +112,10 @@ export const Home = () => {
 										<Link to={`/demo/vehicles/${vehicle.uid}`} className="saberMas btn btn-warning">
 											Saber más!
 										</Link>
-										<button type="button" className="likes btn btn-danger">
+										<button
+											type="button"
+											onClick={()=> actions.addFavoritos(vehicle.name)}
+											className="likes btn btn-danger">
 											<i className="fas fa-heart heart"></i>
 										</button>
 									</div>

@@ -2,114 +2,203 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg?download=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fafe02;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 .navbar {
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-20-1_33761d6d.jpeg?download=true");
     background-size: cover;
     background-position: center;
-    margin: 0;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #fafe02;
+
 }
 
-/* Estilo para el título */
 .text-center {
     text-align: center;
-    margin-bottom: 2vh;
-    font-size: 4em;
+    margin-bottom: 20px;
+    font-size: 3.5em;
     color: #fafe02;
     font-family: "Bungee Tint", sans-serif;
-    font-weight: 400;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* Estilo para la imagen de error */
-.imagenDemo {
-    width: 26rem;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50px;
-    margin: 3vh;
+.img-fluid {
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    border: 2px solid #fafe02;
+
 
 }
 
-/* Estilo para el grupo que contiene la imagen y la información detallada */
-.grupo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* Estilo para la información detallada */
+
+
+
 .informacionDetallada {
-    background-color: #f9f9f9;
-    padding: 2vh;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
 
-
-
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para la lista */
-ul {
+.informacionDetallada ul {
     width: 100%;
-    max-width: 500px;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-transform: capitalize;
 }
 
-/* Estilo para cada elemento de la lista */
-ul li {
-    margin-bottom: 1vh;
-    font-size: 1.1em;
-    line-height: 1.5;
+.modal-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+.liEnFavoritos {
+    display: flex;
+    justify-content: space-between;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-
-    font-style: normal;
+    margin: 1rem;
+    color: white;
+    background-color: black;
 }
 
-/* Estilos específicos para home.js */
+.modal-title {
+
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    color: #fafe02;
+    font-family: "Roboto Mono", monospace;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.modal-body {
+    background-color: black;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.informacionDetallada ul li {
+    margin-bottom: 12px;
+    font-size: 0.7em;
+    line-height: 1.8;
+    font-family: "Roboto Mono", monospace;
+    text-transform: capitalize;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.textoConInformacion {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.puntosDescriptivos {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 30px 0;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
 .iconStarWars {
-    width: 20vh;
-    margin: 2vh auto;
+    width: 100px;
+    margin: 10px auto;
 }
 
 .favoritos {
-    margin: 2vh auto;
+    margin: 0 auto;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
 }
 
-/* Estilos para los botones en la tarjeta */
+.favoritos:hover {
+    background-color: #f9a602;
+    transform: scale(1.05);
+}
+
 .botonesCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 15px;
 }
 
 .saberMas {
     flex: 1;
-    margin-right: 1rem;
+    margin-right: 15px;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    background-color: #fafe02;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
 }
+
+.saberMas:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+
 
 .likes {
     padding: 0.5rem;
@@ -118,7 +207,6 @@ ul li {
     align-items: center;
 }
 
-/* Estilo para el cuerpo de la tarjeta */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -126,45 +214,42 @@ ul li {
     padding: 20px;
 }
 
-/* Estilo para el título de la tarjeta */
 .card-title {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #fafe02;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 
-    font-style: normal;
 }
 
-
-
-
-
-/* Ajuste para el contenedor de tarjetas en home.js */
 .homeContainer {
     background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg?download=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
-/* Estilo para los títulos principales */
 .titulosPrincipales {
     color: #fafe02;
-    margin: 2vh;
-
+    margin: 20px;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+    font-weight: 400;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 
-.textoConInformacion {
-    background-color: #f9f9f9;
-    padding: 2vw;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
-    margin: 3vh 0;
 }
